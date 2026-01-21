@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashy Clinic | Premium Wellness Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #059669; /* Emerald 600 */
+            --secondary: #4f46e5; /* Indigo 600 */
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgba(5, 150, 105, 0.15);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .float-image {
+            animation: float 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-emerald-600 p-2 rounded-xl">
+                    <i class="fas fa-hand-holding-heart text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight">Nashy<span class="text-emerald-600">Clinic</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-slate-600">
+                <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+                <a href="#about" class="hover:text-emerald-600 transition">Our Specialist</a>
+                <a href="#book" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 shadow-lg shadow-indigo-200 transition">Book Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-pattern pt-32 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase mb-6 inline-block">
+                    ✨ Moreleta Park's Finest Care
+                </span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8">
+                    Healthcare That <span class="gradient-text">Radiates</span> Excellence.
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
+                    Experience a clinical environment designed for your comfort. From general wellness to advanced diagnostics, we put your harmony first.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#book" class="px-8 py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-xl shadow-emerald-200 hover:bg-emerald-700 transition">
+                        Start Your Care
+                    </a>
+                    <div class="flex items-center gap-3 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-100">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+                                <img src="baby.jpg" alt="patient">
+                            </div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-emerald-500 flex items-center justify-center text-white text-xs font-bold">4k+</div>
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 underline decoration-emerald-400">Trusted Patients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 lg:mt-0 relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-emerald-100 to-indigo-100 rounded-[3rem] -rotate-3 scale-105 opacity-50"></div>
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000"
+                     alt="Modern Clinic Facility"
+                     class="relative z-10 rounded-[3rem] shadow-2xl float-image">
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white py-12 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <p class="text-3xl font-extrabold text-emerald-600">24hr</p>
+                <p class="text-slate-500 font-medium">Results Turnaround</p>
+            </div>
+            <div class="text-center border-l border-slate-100">
+                <p class="text-3xl font-extrabold text-indigo-600">100%</p>
+                <p class="text-slate-500 font-medium">Digital Records</p>
+            </div>
+            <div class="text-center border-l border-slate-100">
+                <p class="text-3xl font-extrabold text-emerald-600">12+</p>
+                <p class="text-slate-500 font-medium">Medical Services</p>
+            </div>
+            <div class="text-center border-l border-slate-100">
+                <p class="text-3xl font-extrabold text-indigo-600">0min</p>
+                <p class="text-slate-500 font-medium">Wait Time Option</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-24 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Core Medical Departments</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Providing high-vibrancy care across multiple disciplines with certified specialists.</p>
+            </div>
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:flex items-center gap-20">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <img src="Sr.Angie.jpg"
+                     alt="Sr. Angie"
+                     class="rounded-[2.5rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-extrabold mb-6">Expertise With A Heart</h2>
+                <h3 class="text-xl font-bold text-emerald-600 mb-6">Sr. Angie – Lead Wellness Coordinator</h3>
+                <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                    Sr. Angie believes that wellness is more than the absence of disease—it’s the presence of vitality. With specialized training in Neurology and Stress Management, she ensures every patient leaves with a plan for complete harmony.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-emerald-50 rounded-2xl">
+                        <i class="fas fa-certificate text-emerald-600 mb-2"></i>
+                        <p class="font-bold text-slate-800">SANC Certified</p>
+                    </div>
+                    <div class="p-4 bg-indigo-50 rounded-2xl">
+                        <i class="fas fa-award text-indigo-600 mb-2"></i>
+                        <p class="font-bold text-slate-800">10+ Years Exp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-24 bg-emerald-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-4">Request An Appointment</h2>
+            <p class="text-emerald-200 mb-12">Take the first step toward a healthier, more vibrant you.</p>
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <form id="appointment-form" class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-3xl text-slate-900 grid md:grid-cols-2 gap-6 text-left">
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Full Name</label>
+                    <input type="text" id="booking-name" name="user_name" required class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Email Address</label>
+                    <input type="email" id="booking-email" name="user_email" required class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Phone Number</label>
+                    <input type="tel"
+                           id="booking-phone"
+                           name="user_phone"
+                           placeholder="e.g. 012 345 6789"
+                           required
+                           class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Preferred Date</label>
+                    <input type="date" id="booking-date" name="booking_date" required class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Preferred Time</label>
+                    <div class="relative">
+                        <input type="time"
+                               id="booking-time"
+                               name="booking_time"
+                               required
+                               class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition appearance-none">
+                        <p class="text-[10px] text-slate-400 mt-1 italic">*Clinic hours are 8 AM to 6 PM</p>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Department</label>
+                    <select id="booking-service" name="department" required class="w-full px-5 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-emerald-500 transition appearance-none">
+                        <option value="">Select Department</option>
+                        <option value="Checkup">General Checkup</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+                <button type="submit" class="md:col-span-2 py-5 bg-emerald-600 text-white text-xl font-extrabold rounded-2xl hover:bg-emerald-700 transition shadow-xl shadow-emerald-950/20">
+                    Confirm My Booking
+                </button>
+                <div id="booking-message" class="md:col-span-2 text-center mt-4 font-bold text-emerald-600"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16 mb-20">
+            <div>
+                <div class="flex items-center gap-2 mb-8">
+                    <div class="bg-emerald-600 p-2 rounded-lg">
+                        <i class="fas fa-hand-holding-heart text-white"></i>
+                    </div>
+                    <span class="text-2xl font-extrabold text-white tracking-tight">Nashy Clinic</span>
+                </div>
+                <p class="leading-relaxed">Shop 05 Moreleta Square, Pretoria. Dedicated to modern medical excellence and compassionate patient care.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-8">Quick Navigation</h4>
+                <ul class="space-y-4">
+                    <li><a href="#services" class="hover:text-emerald-400 transition">Our Departments</a></li>
+                    <li><a href="#about" class="hover:text-emerald-400 transition">Meet Sr. Angie</a></li>
+                    <li><a href="#book" class="hover:text-emerald-400 transition">Book Appointment</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-8">Contact Direct</h4>
+                <p class="mb-4"><i class="fas fa-phone text-emerald-500 mr-2"></i> 084 732 4780</p>
+                <p class="mb-8"><i class="fas fa-envelope text-emerald-500 mr-2"></i> nashy.clinic@gmail.com</p>
+                <div class="flex gap-4">
+                    <a href="https://web.facebook.com/profile.php?id=61572221146499&__cft__[0]=AZYpX7ncXYmMd-oWmz9p7ua_VTJKbdurg1iW8cGs7rFFjXOl0wKTFFZf9txTVK1o4l_B-R6iA-onKw2G6Cp2RlVVQ-CX8Xj2n1MiTsHER9UMuU0LSk2E8ATPtMlgNTB82Kh6XR-RAqM6wye-lzaZKj_wkK-cD1UFd6EgSe-n0IGQzg&__tn__=-UC%2CP-R" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-emerald-600 transition"><i class="fab fa-facebook-f text-white"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-emerald-600 transition"><i class="fab fa-instagram text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center border-t border-slate-900 pt-10 text-xs tracking-widest uppercase">
+            &copy; 2026 Nashy Clinic | Designed for Wellness. V.SEBOLA
+        </div>
+    </footer>
+
+    <script>
+        const Model = {
+            services: [
+                { icon: 'fa-user-md', title: 'General Checkup', desc: 'Comprehensive health monitoring for all life stages.', color: 'emerald' },
+                { icon: 'fa-brain', title: 'Neurology', desc: 'Expert care for sleep, stress, and nerve health.', color: 'indigo' },
+                { icon: 'fa-baby', title: 'Pediatrics', desc: 'Gentle and precise care for your growing little ones.', color: 'emerald' },
+                { icon: 'fa-vial', title: 'Lab Services', desc: 'On-site diagnostics for rapid, accurate results.', color: 'indigo' }
+            ]
+        };
+
+        const Controller = {
+            init() {
+                this.renderServices();
+                this.setupForm();
+            },
+            renderServices() {
+                const grid = document.getElementById('services-grid');
+                grid.innerHTML = Model.services.map(s => `
+                            <div class="service-card bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-300">
+                                <div class="bg-${s.color}-100 text-${s.color}-600 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-8">
+                                    <i class="fas ${s.icon}"></i>
+                                </div>
+                                <h3 class="text-xl font-extrabold mb-4">${s.title}</h3>
+                                <p class="text-slate-500 leading-relaxed">${s.desc}</p>
+                            </div>
+                        `).join('');
+            },
+            setupForm() {
+                // Initialize with your Public Key
+                emailjs.init("ZKSybqqaGlNdbZhG1");
+
+                const form = document.getElementById('appointment-form');
+                const msg = document.getElementById('booking-message');
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    // Change "button text" to show it's sending
+                    const btn = form.querySelector('button');
+                    btn.innerText = "Sending...";
+
+                    emailjs.sendForm('service_wigj0qh', 'template_xeztfln', form)
+                        .then(() => {
+                            btn.innerText = "Confirm My Booking";
+                            msg.innerHTML = "✨ Request sent! Sr. Angie will call you shortly.";
+                            form.reset();
+                            setTimeout(() => msg.innerHTML = "", 5000);
+                        }, (error) => {
+                            btn.innerText = "Confirm My Booking";
+                            msg.innerHTML = "❌ Failed to send. Please try again.";
+                            console.error('EmailJS Error:', error);
+                        });
+                });
+            }
+        };
+
+        Controller.init();
+    </script>
+</body>
+</html>
